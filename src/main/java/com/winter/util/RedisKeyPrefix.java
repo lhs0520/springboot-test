@@ -9,4 +9,7 @@ public class RedisKeyPrefix {
   public static final String CASH = "cash-";
   public static final String PROFESSION = "profession-";
 
+
+
+
 }
