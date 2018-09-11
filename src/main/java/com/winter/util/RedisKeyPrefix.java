@@ -8,5 +8,4 @@ public class RedisKeyPrefix {
   public static final String USER = "user:";
   public static final String CASH = "cash-";
   public static final String PROFESSION = "profession-";
-
 }
