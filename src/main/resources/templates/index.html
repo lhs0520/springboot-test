@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="/css/common.css" charset="UTF-8"/>
+
+  <script src="/js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/cc-sk-2.5.17.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+  <h1 align="center">三年一班</h1>
+  <button class="cancel">取消</button>
+  <button class="confirm" >确认</button>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="alert alert-success">
+        <table id="table" border="20" align="center" width="1000">
+          <tr class="title">
+            <td width="110">序号</td>
+            <td width="110">姓名</td>
+            <td width="110">年龄</td>
+            <td width="110">地址</td>
+            <td width="110">性别</td>
+            <td width="110">电话号码</td>
+            <td width="110">职业</td>
+          </tr>
+          <tr class="student" th:each ="user,userStat : ${info}">
+            <td th:text = "${user.id}"></td>
+            <td th:text = "${user.name}"></td>
+            <td th:text = "${user.age}"></td>
+            <td th:text = "${user.address}"></td>
+            <td th:text = "${user.sex}"></td>
+            <td th:text = "${user.telephonenum}"></td>
+            <td th:text = "${user.profession}"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" charset="utf-8" src="/js/user.js"></script>
+</html>
