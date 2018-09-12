@@ -17,7 +17,6 @@ public class UserServiceTest {
   @Test
   public void selectUserListTest(){
     String list = userService.selectUserList(2,1);
-
     Assert.assertNotNull(list);
   }
 
