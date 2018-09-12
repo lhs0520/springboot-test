@@ -7,7 +7,7 @@ spring:
         url: jdbc:mysql://127.0.0.1:3306/test?useSSL=false
         username: root
         password: 052019
-        # Ê¹ÓÃdruidÊı¾İÔ´
+        #ä½¿ç”¨druidæ•°æ®æº
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
         initialSize: 5
@@ -40,12 +40,12 @@ spring:
         prefix: classpath:templates
         suffix: /*.html
 
-## ¸ÃÅäÖÃ½ÚµãÎª¶ÀÁ¢µÄ½Úµã£¬ÓĞºÜ¶àÍ¬Ñ§ÈİÒ×½«Õâ¸öÅäÖÃ·ÅÔÚspringµÄ½ÚµãÏÂ£¬µ¼ÖÂÅäÖÃÎŞ·¨±»Ê¶±ğ
+## è¯¥é…ç½®èŠ‚ç‚¹ä¸ºç‹¬ç«‹çš„èŠ‚ç‚¹ï¼Œæœ‰å¾ˆå¤šåŒå­¦å®¹æ˜“å°†è¿™ä¸ªé…ç½®æ”¾åœ¨springä¸‹é¢ï¼Œè¿™æ˜¯ä¸å¯¹çš„
 mybatis:
-  mapper-locations: classpath:mapping/*.xml  #×¢Òâ£ºÒ»¶¨Òª¶ÔÓ¦mapperÓ³ÉäxmlÎÄ¼şµÄËùÔÚÂ·¾¶
-  type-aliases-package: com.winter.model  # ×¢Òâ£º¶ÔÓ¦ÊµÌåÀàµÄÂ·¾¶
+  mapper-locations: classpath:mapping/*.xml  #æ³¨æ„ï¼šä¸€å®šè¦å¯¹åº”mapperæ˜ å°„XMLæ–‡ä»¶çš„æ‰€åœ¨è·¯å¾„
+  type-aliases-package: com.winter.model  #æ³¨æ„ï¼šå¯¹åº”å®ä½“ç±»çš„è·¯å¾„
 
-#pagehelper·ÖÒ³²å¼ş
+#pagehelperåˆ†é¡µæ’ä»¶
 pagehelper:
     helperDialect: mysql
     reasonable: true
